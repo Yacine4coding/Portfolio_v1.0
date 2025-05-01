@@ -1,6 +1,8 @@
 
 import { OrbitControls } from '@react-three/drei';
 
+// import { OrbitControls } from '@react-three/drei/addons/controls/OrbitControls';
+
 import { Canvas } from '@react-three/fiber'
 import { useMediaQuery } from 'react-responsive';
 import { Room } from './Room';

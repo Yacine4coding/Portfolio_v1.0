@@ -40,8 +40,8 @@ const Hero = () => {
                             Shaping
                             <span className="slide">
                                 <span className="wrapper">
-                                    {words.map((word) =>(
-                                        <span key={word.text} className="flex items-center">
+                                    {words.map((word,i) =>(
+                                        <span key={i} className="flex items-center">
                                             <img 
                                                 src={word.imgPath} 
                                                 alt={word.text} 
@@ -66,11 +66,11 @@ const Hero = () => {
             </header>
 
             {/* RIGHT: 3D MODEL */}
-            <figure>
+            {/* <figure>
                 <div className="hero-3d-layout">
                     <HeroExperience />
                 </div>
-            </figure>
+            </figure> */}
         </div>
         <AnimatedCounter />
     </section>
