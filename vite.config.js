@@ -8,19 +8,10 @@ export default defineConfig({
     tailwindcss(),
   ],
   optimizeDeps: {
-    force: true, // <--- force re-optimization
     include: [
       '@react-three/drei',
       '@react-three/fiber',
       'three'
     ]
-  },
-  server: {
-    fs: {
-      strict: false
-    }
-  },
-  ssr: {
-    noExternal: ['three', '@react-three/fiber', '@react-three/drei']
-  }  
+  }, 
 })
