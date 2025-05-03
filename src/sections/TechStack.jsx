@@ -7,10 +7,10 @@ import gsap from "gsap";
 
 const TechStackIcons_3D = () => (
   <>
-    {techStackIcons.map((icon, index) => (
+    {techStackIcons.map((icon) => (
       <div
         key={icon.name}
-        className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
+        className="card-border tech-card overflow-hidden group xl:rounded-4xl rounded-lg"
       >
         <div className="tech-card-animated-bg" />
         <div className="tech-card-content">
@@ -18,7 +18,7 @@ const TechStackIcons_3D = () => (
             <TechIcon model={icon} />
           </div>
 
-          <div className="padding-x w-full">
+          <div className="padding-x w-full select-none">
             <p>{icon.name}</p>
           </div>
         </div>
@@ -29,18 +29,18 @@ const TechStackIcons_3D = () => (
 
 const TechStackIcons_2D = () => (
   <>
-    {techStackImgs.map((icon, index) => (
+    {techStackImgs.map((icon) => (
       <div
         key={icon.name}
-        className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
+        className="card-border tech-card overflow-hidden group xl:rounded-4xl rounded-lg"
       >
         <div className="tech-card-animated-bg" />
         <div className="tech-card-content">
-          <div className="tech-icon-wrapper">
+          <div className="tech-icon-wrapper select-none">
             <img src={icon.imgPath} alt={icon.name} />
           </div>
 
-          <div className="padding-x w-full">
+          <div className="padding-x w-full select-none">
             <p>{icon.name}</p>
           </div>
         </div>
