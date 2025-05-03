@@ -76,7 +76,7 @@ const TechStack = () => {
           sub="🤝 The Skills I Bring to the Table"
         />
         <div className="tech-grid">
-          <TechStackIcons_2D />
+          <TechStackIcons_3D />
         </div>
       </div>
     </div>
