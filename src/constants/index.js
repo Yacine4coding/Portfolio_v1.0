@@ -132,13 +132,13 @@ const techStackIcons = [
   {
     name: "Figma Designer",
     modelPath: "/models/figma.glb",
-    scale: 1,
+    scale: 1.5,
     rotation: [0, 0, 0],
   },
   {
     name: "TailwindCSS Styler",
     modelPath: "/models/tailwindcss.glb",
-    scale: 1,
+    scale: 1.5,
     rotation: [0, 0, 0],
   },
   {
