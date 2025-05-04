@@ -4,7 +4,7 @@ const LogoIcon = ({ icon }) => {
     return(
         <div className="flex-none flex-center marquee-item">
             <img src={icon.imgPath} alt={icon.name} />
-            <span className="text-2xl ml-2 first-letter:uppercase">{icon.name}</span>
+            {/* <span className="text-2xl ml-2 first-letter:uppercase">{icon.name}</span> */}
         </div>
     )
 }
