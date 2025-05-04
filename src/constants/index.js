@@ -137,7 +137,7 @@ const techStackIcons = [
   },
   {
     name: "TailwindCSS Styler",
-    modelPath: "/models/tailwind.glb",
+    modelPath: "/models/tailwindcss.glb",
     scale: 0.07,
     rotation: [0, 0, 0],
   },
