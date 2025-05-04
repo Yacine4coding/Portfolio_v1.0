@@ -84,9 +84,9 @@ const ExperienceSection = () => {
                     </div>
 
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20 ">
-                      <div className="timeline-logo p-3 overflow-hidden">
+                      <div className="timeline-logo p-1 overflow-hidden">
                         <img
-                          className="pt-0.5 pr-0.5 bg-white-50 rounded-full"
+                          className="bg-white-50 rounded-full"
                           src={card.logoPath}
                           alt="Logo"
                         />
