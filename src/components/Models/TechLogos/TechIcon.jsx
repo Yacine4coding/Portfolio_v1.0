@@ -16,6 +16,14 @@ const TechIcon = ({ model }) => {
         }
       });
     }
+
+    if(model.name === "TailwindCSS Styler"){
+      scene.scene.traverse((child) => {
+        if(child.isMesh){
+          
+        }
+      })
+    }
   })
 
   return (

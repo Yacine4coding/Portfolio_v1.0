@@ -132,7 +132,7 @@ const techStackIcons = [
   {
     name: "Figma Designer",
     modelPath: "/models/figma.glb",
-    scale: 1.5,
+    scale: 2,
     rotation: [0, 0, 0],
   },
   {
