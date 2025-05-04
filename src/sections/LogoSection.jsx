@@ -4,6 +4,7 @@ const LogoIcon = ({ icon }) => {
     return(
         <div className="flex-none flex-center marquee-item">
             <img src={icon.imgPath} alt={icon.name} />
+            <span className="text-2xl ml-2 first-letter:uppercase">{icon.name}</span>
         </div>
     )
 }
@@ -17,7 +18,7 @@ const LogoSection = () => {
         <div className="marquee h-52">
             <div className="marquee-box md:gap-12 gap-5">
                 {logoIconsList.map((icon,index) => (
-                    <LogoIcon key={index} icon={icon} />
+                    <LogoIcon className="invert" key={index} icon={icon} />
                 ))}
                 {logoIconsList.map((icon, index) => (
                     <LogoIcon key={index} icon={icon} />

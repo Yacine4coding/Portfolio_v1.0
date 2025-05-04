@@ -32,6 +32,7 @@ const HeroExperience = () => {
             <Room />
         </group>
     </Canvas>
+    // <p>Hello world!</p>
   )
 }
 

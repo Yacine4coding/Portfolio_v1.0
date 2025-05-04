@@ -9,22 +9,19 @@ gsap.registerPlugin(ScrollTrigger);
 const ExperienceSection = () => {
   useGSAP(() => {
     gsap.utils.toArray(".timeline-card").forEach((card) => {
-      gsap.from(
-        card,
-        {
-          xPercent: -100,
-          opacity: 0,
-          transformOrigin: "left left",
-          duration: 1,
-          ease: "power2.inOut",
-          scrollTrigger: {
-            trigger: card,
-            start: "top 80%",
-          }
+      gsap.from(card, {
+        xPercent: -100,
+        opacity: 0,
+        transformOrigin: "left left",
+        duration: 1,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 80%",
         },
-      );  
+      });
     });
-    
+
     gsap.to(".timeline", {
       transformOrigin: "bottom bottom",
       ease: "power1.inOut",
@@ -36,25 +33,21 @@ const ExperienceSection = () => {
           gsap.to(".timeline", {
             scaleY: 1 - self.progress,
           });
-        }
+        },
       },
     });
 
-
     gsap.utils.toArray(".expText").forEach((text) => {
-      gsap.from(
-        text,
-        {
-          xPercent: 0,
-          opacity: 0,
-          duration: 1,
-          ease: "power2.inOut",
-          scrollTrigger: {
-            trigger: text,
-            start: "top 60%",
-          }
+      gsap.from(text, {
+        xPercent: 0,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: text,
+          start: "top 60%",
         },
-      );  
+      });
     });
   }, []);
   return (
@@ -64,8 +57,8 @@ const ExperienceSection = () => {
     >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
-          title="Profissional Work Experience"
-          sub="💼 My Career Overview"
+          title="Education & Learning Journey"
+          sub="🎓 My Academic Background"
         />
 
         <div className="mt-32 relative">
@@ -75,7 +68,11 @@ const ExperienceSection = () => {
                 <div className="xl:w-2/6">
                   <GlowCard card={card} index={index}>
                     <div>
-                      <img src={card.imgPath} alt={card.title} />
+                      <img
+                        className="w-60"
+                        src={card.imgPath}
+                        alt={card.title}
+                      />
                     </div>
                   </GlowCard>
                 </div>
@@ -87,8 +84,12 @@ const ExperienceSection = () => {
                     </div>
 
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20 ">
-                      <div className="timeline-logo">
-                        <img src={card.logoPath} alt="Logo" />
+                      <div className="timeline-logo p-3 overflow-hidden">
+                        <img
+                          className="pt-0.5 pr-0.5 bg-white-50 rounded-full"
+                          src={card.logoPath}
+                          alt="Logo"
+                        />
                       </div>
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>

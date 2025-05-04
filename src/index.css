@@ -177,6 +177,10 @@ section {
 
         .badges {
           @apply flex gap-2 mb-4;
+
+          .badge{
+            @apply bg-blue-600 px-1.5 rounded-full;
+          }
         }
 
         h2 {
@@ -396,20 +400,23 @@ section {
 
 /* marquee */
 .marquee {
-  width: 100dvw;
+  width: 100  vw;
   overflow: hidden;
   position: relative;
 }
 .marquee-box {
+  @apply invert brightness-0 saturate-0 mix-blend-difference;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 200%;
+  width: 250%;
   height: 100%;
   position: absolute;
   overflow: hidden;
-  animation: marquee 30s linear infinite;
+  animation: marquee 60s linear infinite;
 }
 .marquee-item {
+  @apply w-10 opacity-20;
   float: left;
 }
 @keyframes marquee {
